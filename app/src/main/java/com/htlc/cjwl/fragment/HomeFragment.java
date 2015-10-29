@@ -22,6 +22,8 @@ public class HomeFragment extends Fragment implements View.OnClickListener{
         View view = inflater.inflate(R.layout.layout_home_fragment,null);
 
         TextView tv_fragment_title = (TextView) view.findViewById(R.id.tv_fragment_title);
+        tv_fragment_title.setText(R.string.home_fragment_title);
+
         TextView tv_consign = (TextView) view.findViewById(R.id.tv_consign);
         ImageButton ib_home_network_query = (ImageButton) view.findViewById(R.id.ib_home_network_query);
         ImageButton ib_home_rute_query = (ImageButton) view.findViewById(R.id.ib_home_rute_query);
