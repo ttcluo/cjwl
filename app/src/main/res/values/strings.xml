@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">长久物流</string>
+    <string name="home_fragment_title">长久运车</string>
+    <string name="home_fragment_name">运车</string>
+    <string name="orders_fragment_title">我的订单</string>
+    <string name="orders_fragment_name">我的订单</string>
+    <string name="service_fragment_title">长久服务</string>
+    <string name="service_fragment_name">长久服务</string>
+    <string name="me_fragment_title">我的</string>
+    <string name="me_fragment_name">运车</string>
+
+    <!--home-->
+    <string name="consign">我要运车</string>
+
+
+
+</resources>
