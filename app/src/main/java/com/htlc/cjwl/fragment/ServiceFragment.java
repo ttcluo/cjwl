@@ -9,13 +9,14 @@ import android.view.ViewGroup;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.handmark.pulltorefresh.library.PullToRefreshListView;
 import com.htlc.cjwl.R;
 
 /**
  * Created by Administrator on 2015/10/28.
  */
 public class ServiceFragment extends Fragment{
-    private ListView lv_service_listView;
+    private PullToRefreshListView lv_service_listView;
 
     @Nullable
     @Override
@@ -25,14 +26,14 @@ public class ServiceFragment extends Fragment{
         TextView tv_fragment_title = (TextView) view.findViewById(R.id.tv_fragment_title);
         tv_fragment_title.setText(R.string.service_fragment_title);
 
-        lv_service_listView = (ListView) view.findViewById(R.id.lv_service_listView);
+        lv_service_listView = (PullToRefreshListView) view.findViewById(R.id.lv_service_listView);
         return view;
     }
 
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        // TODO: 2015/10/29
+
         lv_service_listView.setAdapter(null);
     }
 }
