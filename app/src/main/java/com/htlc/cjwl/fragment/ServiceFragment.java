@@ -11,6 +11,10 @@ import android.widget.TextView;
 
 import com.handmark.pulltorefresh.library.PullToRefreshListView;
 import com.htlc.cjwl.R;
+import com.htlc.cjwl.bean.ServiceBean;
+import com.htlc.cjwl.bean.ServiceItemBean;
+
+import java.util.ArrayList;
 
 /**
  * Created by Administrator on 2015/10/28.
@@ -33,6 +37,11 @@ public class ServiceFragment extends Fragment{
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
+        //测试数据------------------
+       ArrayList<ServiceItemBean> items = new ArrayList<ServiceItemBean>();
+
+
+        //测试数据------------------
 
         lv_service_listView.setAdapter(null);
     }
