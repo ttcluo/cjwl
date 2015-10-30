@@ -6,12 +6,22 @@
     <string name="orders_fragment_name">我的订单</string>
     <string name="service_fragment_title">长久服务</string>
     <string name="service_fragment_name">长久服务</string>
-    <string name="me_fragment_title">我的</string>
-    <string name="me_fragment_name">运车</string>
+    <string name="my_fragment_title">我的</string>
+    <string name="my_fragment_name">我的</string>
 
     <!--home-->
     <string name="consign">我要运车</string>
 
 
+
+    <!--my-->
+    <string name="rank">等级：</string>
+    <string name="tel">电话：</string>
+    <string name="my_address">常用地址</string>
+    <string name="my_score">我的积分</string>
+    <string name="message_center">消息中心</string>
+    <string name="setting">设置</string>
+    <string name="login">登录</string>
+    <string name="logout">安全退出</string>
 
 </resources>
