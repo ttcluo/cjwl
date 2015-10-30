@@ -22,6 +22,7 @@ import java.util.ArrayList;
  */
 public class ServiceFragment extends Fragment{
     private ListView lv_service_listView;
+    private ServiceListViewAdapter adapter;
 
     @Nullable
     @Override
@@ -45,10 +46,13 @@ public class ServiceFragment extends Fragment{
             ServiceItemBean bean = new ServiceItemBean();
             bean.id = i;
             bean.service_image = "/upload/20151027/zjy.jpg";
+            items.add(bean);
         }
 
         //测试数据------------------
-
-        lv_service_listView.setAdapter(new ServiceListViewAdapter(getActivity(),items));
+//        System.out.println(getContext());
+        adapter = new ServiceListViewAdapter(getContext(), items);
+        System.out.println(adapter);
+        lv_service_listView.setAdapter(adapter);
     }
 }

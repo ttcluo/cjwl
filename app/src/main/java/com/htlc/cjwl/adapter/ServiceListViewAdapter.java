@@ -48,7 +48,9 @@ public class ServiceListViewAdapter extends BaseAdapter {
         }else{
             holder = (ViewHolder) convertView.getTag();
         }
-
+        //模拟数据------------------
+        holder.iv_service_adapter.setImageResource(R.drawable.service_item_default);
+        //模拟数据------------------
         return convertView;
     }
     class ViewHolder{
