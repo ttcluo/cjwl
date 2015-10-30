@@ -9,8 +9,9 @@ import android.view.ViewGroup;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import com.handmark.pulltorefresh.library.PullToRefreshListView;
+
 import com.htlc.cjwl.R;
+import com.htlc.cjwl.adapter.ServiceListViewAdapter;
 import com.htlc.cjwl.bean.ServiceBean;
 import com.htlc.cjwl.bean.ServiceItemBean;
 
@@ -20,7 +21,7 @@ import java.util.ArrayList;
  * Created by Administrator on 2015/10/28.
  */
 public class ServiceFragment extends Fragment{
-    private PullToRefreshListView lv_service_listView;
+    private ListView lv_service_listView;
 
     @Nullable
     @Override
@@ -30,7 +31,8 @@ public class ServiceFragment extends Fragment{
         TextView tv_fragment_title = (TextView) view.findViewById(R.id.tv_fragment_title);
         tv_fragment_title.setText(R.string.service_fragment_title);
 
-        lv_service_listView = (PullToRefreshListView) view.findViewById(R.id.lv_service_listView);
+        lv_service_listView = (ListView) view.findViewById(R.id.lv_service_listView);
+
         return view;
     }
 
@@ -39,10 +41,14 @@ public class ServiceFragment extends Fragment{
         super.onActivityCreated(savedInstanceState);
         //测试数据------------------
        ArrayList<ServiceItemBean> items = new ArrayList<ServiceItemBean>();
-
+        for(int i=0;i<10;i++){
+            ServiceItemBean bean = new ServiceItemBean();
+            bean.id = i;
+            bean.service_image = "/upload/20151027/zjy.jpg";
+        }
 
         //测试数据------------------
 
-        lv_service_listView.setAdapter(null);
+        lv_service_listView.setAdapter(new ServiceListViewAdapter(getActivity(),items));
     }
 }
