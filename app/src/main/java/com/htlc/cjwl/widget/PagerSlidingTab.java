@@ -432,7 +432,7 @@ public class PagerSlidingTab extends HorizontalScrollView {
 			if (delegatePageListener != null) {
 				delegatePageListener.onPageSelected(position);
 			}
-			
+
 			//使当前item高亮
 			for (int i = 0; i < tabCount; i++) {
 				View v = tabsContainer.getChildAt(i);
