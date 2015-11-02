@@ -5,11 +5,11 @@
     <include
         android:id="@+id/title"
         layout="@layout/layout_fragment_title"/>
-    <com.htlc.cjwl.widget.PagerSlidingTab
+    <com.astuetz.PagerSlidingTabStrip
         android:id="@+id/indicator"
         android:layout_width="match_parent"
         android:layout_height="50dp">
-    </com.htlc.cjwl.widget.PagerSlidingTab>
+    </com.astuetz.PagerSlidingTabStrip>
     <android.support.v4.view.ViewPager
         android:layout_width="match_parent"
         android:layout_height="match_parent"

@@ -1,2 +1,2 @@
-include ':app', ':library_tabstrip'
+include ':app', ':library_strip'
 include ':library'
